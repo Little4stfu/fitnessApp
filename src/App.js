@@ -10,6 +10,7 @@ import Home from './pages/Home.js';
 import Login from './pages/Login.js';
 import AddWorkout from './pages/AddWorkout.js';
 import Workout from './pages/Workout.js';
+import Logout from './pages/Logout.js';
 
 function App() {
     const [user, setUser] = useState({
@@ -50,6 +51,8 @@ function App() {
                         <Route path="/Login" element={<Login />} />
                         <Route path="/AddWorkout" element={<AddWorkout />} />
                         <Route path="/Workouts" element={<Workout/>} />
+                        <Route path="/Logout" element={<Logout/>} />
+                        
                     </Routes>
                 </Container>
             </Router>
